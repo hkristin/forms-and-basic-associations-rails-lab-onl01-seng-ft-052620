@@ -12,6 +12,8 @@
   <br />
   <%= f.collection_select :genre_id, Genre.all, :id, :name %>
   <br />
-
+  <input type="submit" value="Submit">
+  <br />
+  
   <%= f.submit %>
 <% end %>
