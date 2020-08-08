@@ -35,7 +35,8 @@ class SongsController < ApplicationController
     else
       render :edit
     end
-
+  end
+  
     def destroy
       @song = Song.find(params[:id])
       @song.destroy
