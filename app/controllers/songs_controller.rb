@@ -35,6 +35,12 @@ class SongsController < ApplicationController
     else
       render :edit
     end
+
+  private
+ 
+    def song_params
+      params.require(:song).permit(:artist_name, :genre_id)
+    end
   end
 
   def destroy
@@ -50,4 +56,3 @@ class SongsController < ApplicationController
     params.require(:song).permit(:title)
   end
 end
-
