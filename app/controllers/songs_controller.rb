@@ -42,7 +42,7 @@ class SongsController < ApplicationController
       flash[:notice] = "Song deleted."
       redirect_to song_path
     end
-    
+
   private
 
     def song_params
